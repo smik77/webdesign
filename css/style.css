@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic,
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------
+ここから
+--------- */
+
+.mainvisualbg {
+  background-color: #eee;
+}
+
+.mainvisual {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  /* z-index: -1; */
+  box-shadow: 0 2px 3px #444;
+  border-bottom-left-radius: 600px 30px;
+  border-bottom-right-radius: 600px 30px;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.header img {
+  /* border: 1mm solid orange;
+  background-color: orange; */
+  width: 250px;
+}
+
+.header ul {
+  /* border: 1mm solid orange; */
+  display: flex;
+  list-style: none;
+  justify-content: right;
+  align-items: center;
+}
+
+.header li {
+  color: white;
+  font-size: 1.3rem;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  transition-duration: 0.2s;
+}
+
+.header li:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.divmessage,
+.divnewsbg {
+  background-color: #eee;
+}
+
+.divmessage .message {
+  display: block;
+  width: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.message h2 {
+  font-size: 4rem;
+  letter-spacing: 6px;
+  font-weight: normal;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.message p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  margin-bottom: 40px;
+}
+
+.message img {
+  width: 270px;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+.divproduct,
+.divnews {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.divproduct .headwrap,
+.divnews .headwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.divproduct .headwrap h2,
+.divnews .headwrap h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+
+.divproduct .headwrap p,
+.divnews .headwrap p {
+  padding: 15px 60px;
+  border: 1px solid #222;
+  transition-duration: 0.2s;
+}
+
+.divproduct .headwrap p:hover,
+.divnews .headwrap p:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contents .block {
+  width: 250px;
+  transition-duration: 0.2s;
+  padding-bottom: 80px;
+}
+
+.contents .block:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.contents .block img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contents .block p {
+  display: block;
+  font-size: 2rem;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.news-pick .block {
+  display: flex;
+  /* width: 250px; */
+  padding-bottom: 30px;
+}
+
+.news-pick .block img {
+  width: 350px;
+  height: 200px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.news-pick .eachtopic {
+  padding: 10px;
+}
+
+.eachtopic h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+.eachtopic time {
+  font-size: 1.2rem;
+  color: #777;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+.eachtopic p {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #777;
+  line-height: 2rem;
+  padding: 20px 5px 5px;
+}
+
+.divshare ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 30px 0;
+}
+
+.divshare li {
+  padding: 15px 30px;
+  letter-spacing: 2px;
+  border: 1px solid;
+  margin: 0 20px;
+}
+
+.divshare .facebook {
+  border-color: #00f;
+  color: #00f;
+}
+.divshare .twitter {
+  border-color: #39f;
+  color: #39f;
+}
+.divshare .hatena {
+  border-color: #27f;
+  color: #27f;
+}
